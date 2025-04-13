@@ -22,7 +22,7 @@ def get_value(val, my_dict):
 
 app_mode = st.sidebar.selectbox("Select Page", ["Home", "Prediction"])
 if app_mode == "Home":
-    st.title("LOAN PREDICTION :")
+    st.markdown("<h1 style='text-align: center;'>LOAN PREDICTION</h1>", unsafe_allow_html=True)
     st.image("loan_image.jpg")
     st.markdown("Dataset :")
     data = pd.read_csv("test.csv")
